@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maick Car | Importados de Alto Padrão</title>
+  <meta name="description" content="Sua concessionária exclusiva de carros superesportivos e luxo importados. Porsche, Ferrari, Lamborghini, Rolls-Royce e muito mais na Maick Car.">
+  
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar" id="navbar">
+      <a href="#" class="logo">
+        <div class="logo-icon"><i class="fas fa-crown"></i></div>
+        MAICK<span>CAR</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Início</a></li>
+        <li><a href="#estoque">Estoque Exclusive</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#simulador">Financiamento</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <a href="#estoque" class="btn btn-outline">Ver Catálogo</a>
+        <button class="btn btn-primary" onclick="openInterestModal('Atendimento Exclusivo')">
+          <i class="fab fa-whatsapp"></i> Falar com Consultor
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content">
+      <div class="badge">
+        <i class="fas fa-star"></i> Concessionária Ultra High-End
+      </div>
+      <h1 class="hero-title">
+        O Ápice da Engenharia <span>Automotiva Mundial</span>
+      </h1>
+      <p class="hero-description">
+        Importação direta, curadoria exclusiva e veículos superesportivos zero km e seminovos de altíssimo padrão. Experimente o poder e a sofisticação da Maick Car.
+      </p>
+      
+      <div class="nav-actions">
+        <a href="#estoque" class="btn btn-primary">Explorar Coleção</a>
+        <a href="#simulador" class="btn btn-outline">Simular Financiamento</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <h4>100%</h4>
+          <p>Garantia & Procedência</p>
+        </div>
+        <div class="stat-item">
+          <h4>+150</h4>
+          <p>Superesportivos Entregues</p>
+        </div>
+        <div class="stat-item">
+          <h4>24h</h4>
+          <p>Atendimento Concierge</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-image-container">
+        <img src="images/hero.png" alt="Superesportivo de Luxo Maick Car">
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Section -->
+  <section class="section" id="estoque">
+    <div class="section-header">
+      <p class="section-subtitle">Showroom Exclusivo</p>
+      <h2 class="section-title">Veículos Disponíveis</h2>
+      <p style="color: var(--text-muted);">Confira a nossa seleção única de supercarros a pronta entrega e importação personalizada.</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Todos os Modelos</button>
+      <button class="filter-btn" data-filter="superesportivos">Superesportivos</button>
+      <button class="filter-btn" data-filter="esportivos">Esportivos</button>
+      <button class="filter-btn" data-filter="luxo">Ultra Luxo</button>
+    </div>
+
+    <div class="cars-grid" id="carsGrid">
+      <!-- Cars dynamic cards will be inserted by script.js -->
+    </div>
+  </section>
+
+  <!-- Services / Features Section -->
+  <section class="section" id="diferenciais" style="background: rgba(13, 17, 26, 0.4);">
+    <div class="section-header">
+      <p class="section-subtitle">Por que escolher a Maick Car?</p>
+      <h2 class="section-title">Experiência VIP Incomparável</h2>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-plane-arrival"></i></div>
+        <h3 class="feature-title">Importação Sob Encomenda</h3>
+        <p class="feature-desc">Configuração direto de fábrica dos modelos mais cobiçados do mundo, com desembaraço total sem preocupações.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3 class="feature-title">Blindagem & Certificação</h3>
+        <p class="feature-desc">Parcerias com as melhores blindadoras de alta tecnologia e laudos cautelares 100% aprovados.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-truck-pickup"></i></div>
+        <h3 class="feature-title">Entrega Nacional em Sider</h3>
+        <p class="feature-desc">Entregamos o seu supercarro na sua porta em qualquer lugar do Brasil com transbordo de segurança total.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fas fa-user-shield"></i></div>
+        <h3 class="feature-title">Atendimento Private Banking</h3>
+        <p class="feature-desc">Privacidade, discrição e agilidade nas negociações financeiras com taxas diferenciadas para o segmento luxo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Financial Simulator Interactive Section -->
+  <section class="section interactive-section" id="simulador">
+    <div class="section-header">
+      <p class="section-subtitle">Facilidade & Flexibilidade</p>
+      <h2 class="section-title">Simulador de Aquisição VIP</h2>
+      <p style="color: var(--text-muted);">Calcule estimativas de parcelamento de forma transparente.</p>
+    </div>
+
+    <div class="calc-box">
+      <div class="form-group">
+        <label for="calcCarPrice">Valor Estimado do Veículo (R$)</label>
+        <input type="number" id="calcCarPrice" class="form-control" value="3500000" step="50000">
+      </div>
+
+      <div class="form-group">
+        <label for="calcDownPayment">Entrada: <span id="downPaymentPercentText" style="color: var(--primary-glow);">30%</span></label>
+        <input type="range" id="calcDownPayment" class="range-slider" min="10" max="80" value="30">
+      </div>
+
+      <div class="form-group">
+        <label for="calcMonths">Prazo do Financiamento</label>
+        <select id="calcMonths" class="form-control">
+          <option value="12">12 Meses</option>
+          <option value="24">24 Meses</option>
+          <option value="36" selected>36 Meses</option>
+          <option value="48">48 Meses</option>
+          <option value="60">60 Meses</option>
+        </select>
+      </div>
+
+      <div class="calc-result">
+        <div>
+          <span style="color: var(--text-muted); font-size: 0.9rem;">Parcela Mensal Estimada:</span>
+          <div class="calc-result-val" id="calcResultValue">R$ 0,00</div>
+        </div>
+        <button class="btn btn-primary" onclick="openInterestModal('Simulação de Financiamento')">
+          Solicitar Análise de Crédito
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Lead Generation -->
+  <div class="modal-overlay" id="interestModal">
+    <div class="modal-content">
+      <button class="modal-close"><i class="fas fa-times"></i></button>
+      <h3 style="font-family: var(--font-heading); color: #fff; margin-bottom: 0.5rem;" id="modalCarTitle">Tenho Interesse</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Preencha seus dados para receber a ficha técnica e proposta comercial VIP da Maick Car.</p>
+      
+      <form id="interestForm">
+        <div class="form-group">
+          <label for="leadName">Nome Completo</label>
+          <input type="text" id="leadName" class="form-control" placeholder="Seu nome completo" required>
+        </div>
+        <div class="form-group">
+          <label for="leadPhone">Telefone / WhatsApp</label>
+          <input type="tel" id="leadPhone" class="form-control" placeholder="(00) 90000-0000" required>
+        </div>
+        <div class="form-group">
+          <label for="leadEmail">E-mail Corporativo/Pessoal</label>
+          <input type="email" id="leadEmail" class="form-control" placeholder="seuemail@exemplo.com" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+          Enviar Solicitação VIP
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contato">
+    <div class="footer-content">
+      <div class="footer-col" style="grid-column: span 2;">
+        <a href="#" class="logo" style="margin-bottom: 1rem; display: inline-flex;">
+          <div class="logo-icon"><i class="fas fa-crown"></i></div>
+          MAICK<span>CAR</span>
+        </a>
+        <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 400px; margin-top: 0.5rem;">
+          Referência em importação e comercialização de veículos de ultra luxo e alta performance no Brasil. Atendimento sob agendamento.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#estoque">Estoque</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#simulador">Financiamento</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato Concierge</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-map-marker-alt" style="color: var(--primary-glow); margin-right: 8px;"></i> Av. Europa, Jardins - SP</a></li>
+          <li><a href="#"><i class="fas fa-phone-alt" style="color: var(--primary-glow); margin-right: 8px;"></i> +55 (11) 99999-8888</a></li>
+          <li><a href="#"><i class="fas fa-envelope" style="color: var(--primary-glow); margin-right: 8px;"></i> contato@maickcar.com.br</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Maick Car. Todos os direitos reservados. Design e Tecnologia de Alto Padrão.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
